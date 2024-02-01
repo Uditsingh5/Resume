@@ -1,0 +1,323 @@
+:root {
+  --primary-color: #003;
+  --sec-color: #767575;
+}
+@font-face {
+  font-family: logo;
+  src: url("EmotionalRescuePersonalUseRegular-PKY87.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
+  /* border: 1px solid black; */
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  background-color: var(--primary-color);
+  background: url(photo/bg10.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  background-color: rgba(0, 0, 0, 0.214);
+  display: flex;
+  text-align: center;
+  padding: 0.75em;
+}
+header .nav-container {
+  /* border: 2px solid #fff; */
+  height: 100%;
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: 0.5em;
+  padding-top: 0.75em; */
+}
+nav div img {
+  padding-left: 1.5em;
+  height: 2em;
+  /* background-color: #fff; */
+}
+.logo a {
+  font-family: logo;
+  font-size: 2em;
+  padding: 0.5em;
+}
+a {
+  color: #fff;
+  padding: 1.5em;
+  text-decoration: none;
+}
+.options a:first-child {
+  color: gray;
+}
+.options a:hover {
+  color: gray;
+  /* border-bottom:7px solid gray ; */
+}
+.container {
+  padding-top: 3em; /*2.5em*/
+  padding-bottom: 2.5em;
+  width: 35%;
+  margin: 0 auto;
+}
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avatar img {
+  width: 11em;
+  height: 11em;
+  border: 0.5px solid black;
+  border-radius: 100%;
+}
+.intro {
+  /* text-align: center; used centre classs */
+  text-align: center;
+  margin-top: 3vh;
+  color: #fff;
+  width: 100%;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1.2;
+}
+.india {
+  background: -webkit-linear-gradient(60deg, #d348f6, #579bea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about {
+  text-align: center;
+  padding-top: 25px;
+  color: rgb(182, 184, 184);
+}
+.btn {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  gap: 1em;
+  padding-top: 3em;
+}
+.btn1 {
+  font-weight: 900;
+  cursor: pointer;
+  border: 0.15em solid black;
+  border-radius: 100px;
+  height: 3.7em;
+  width: 10em;
+}
+.btn2 {
+  font-weight: 900;
+  color: #fff;
+  background-color: transparent;
+  height: 3.7em;
+  width: 10em;
+  cursor: pointer;
+  border: 0.15em solid #fff;
+  border-radius: 100px;
+}
+button:active {
+  transform: scale(0.97);
+}
+.skills {
+  height: auto;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 1000;
+  line-height: 5em;
+}
+.skills img {
+  line-height: 1em;
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 50%;
+  /* border-radius: 54% 70% 51% 61%; */
+  /* border: 0.25px solid white; */
+}
+.skilllogo img {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+.projects {
+  margin: 0 auto;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projects .project-dibba {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5px; /*upper gapping*/
+  flex-wrap: wrap;
+}
+.project-dibba .dibba1 {
+  overflow: hidden;
+  background: url(photo/myntraclone.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.dibba1 .captions {
+  color: rgb(241, 240, 240); /*#f41cb2; */
+  font-weight: 800;
+  opacity: 0;
+  box-sizing: border-box;
+  background-color: #202020a2;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  position: relative;
+  top: 9vh;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: opacity 0.5s cubic-bezier(0.76, -0.01, 0, 1.09);
+}
+
+.dibba1 .captions:hover {
+  opacity: 1;
+}
+.captions a {
+  padding: 5px;
+  font-weight: 500;
+  color: rgb(241, 240, 240);
+}
+.projects h2 {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 1000;
+}
+.project {
+  margin: 15px 8px;
+  text-align: center;
+  margin-bottom: 60px;
+  border: 0.5px solid grey;
+  border-radius: 15px;
+  background-color: transparent;
+  text-align: center;
+  width: 45%;
+  height: 25vh;
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.experience {
+  margin: 15px auto;
+  margin-bottom: 60px;
+  border: 0.5px solid grey;
+  border-radius: 15px;
+  background-color: transparent;
+  text-align: center;
+  width: 35%;
+  height: 25vh;
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.exp h2 {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 1000;
+  margin-bottom: 2px;
+  /* line-height: 5em; */
+}
+.contact {
+  margin: 15px auto;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 60px;
+  border-radius: 15px;
+  background-color: transparent;
+  /* border: 0.5px solid grey; */
+  width: 35%;
+  height: 25vh;
+}
+.email img {
+  height: 1em;
+  width: 1em;
+  padding-top: 10px;
+  align-items: center;
+}
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.socials a {
+  padding: 0px;
+  font-size: 2em;
+  text-align: left;
+}
+.socials a:nth-child(1) {
+  color: hotpink;
+}
+.socials a:nth-child(2) {
+  color: royalblue;
+}
+.socials a:nth-child(3) {
+  color: rgb(58, 184, 234);
+}
+.footer {
+  padding-top: 10px;
+  background-color: rgba(0, 0, 0, 0.214);
+}
+.footer .copyright {
+  width: 100%;
+  background-color: rgb(4, 4, 4);
+  text-align: center;
+  color: #fff;
+}
+#menu {
+  display: none;
+}
+.menu i {
+  display: none;
+}
+
+@media (max-width: 540px) {
+  .menu i {
+    padding-left: 50px;
+    display: flex;
+    width: 50px;
+    color: #fff;
+    font-size: 1.5em;
+  }
+  .options {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 6vh;
+    right: -2vw;
+    width: 30%;
+    background: #00000099;
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px rgba(167, 167, 167, 0.773) inset,
+      2px 2px 10px rgba(177, 176, 176, 0.981);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  #menu:checked + .options {
+    opacity: 1;
+    top: 8vh;
+    right: 10px;
+  }
+}
